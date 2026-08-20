@@ -1129,3 +1129,700 @@ html {
     scroll-behavior: auto !important;
   }
 }
+
+/* =========================================================
+   NEW PREMIUM COLOR THEME
+   Midnight Purple • Electric Violet • Magenta
+   ========================================================= */
+
+:root {
+  --bg-main: #07050d;
+  --bg-secondary: #0c0817;
+  --bg-card: rgba(20, 12, 35, 0.72);
+
+  --text-main: #f8f7ff;
+  --text-secondary: #aaa4bd;
+  --text-muted: #716b82;
+
+  --primary: #a855f7;
+  --primary-light: #c084fc;
+  --secondary: #ec4899;
+  --accent: #f0abfc;
+
+  --border: rgba(168, 85, 247, 0.22);
+  --border-bright: rgba(192, 132, 252, 0.45);
+
+  --glow-purple: rgba(168, 85, 247, 0.25);
+  --glow-pink: rgba(236, 72, 153, 0.18);
+}
+
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+html {
+  background: var(--bg-main) !important;
+}
+
+body {
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(168, 85, 247, 0.12),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 85% 75%,
+      rgba(236, 72, 153, 0.10),
+      transparent 30%
+    ),
+    var(--bg-main) !important;
+
+  color: var(--text-main) !important;
+}
+
+
+/* =========================================================
+   MAIN APP
+   ========================================================= */
+
+.app {
+  background:
+    radial-gradient(
+      circle at 20% 30%,
+      rgba(168, 85, 247, 0.07),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      rgba(236, 72, 153, 0.06),
+      transparent 35%
+    ),
+    var(--bg-main) !important;
+
+  color: var(--text-main) !important;
+}
+
+
+/* =========================================================
+   BACKGROUND
+   ========================================================= */
+
+.background {
+  background: transparent !important;
+}
+
+.grid {
+  opacity: 0.22 !important;
+
+  background-image:
+    linear-gradient(
+      rgba(168, 85, 247, 0.07) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(168, 85, 247, 0.07) 1px,
+      transparent 1px
+    ) !important;
+}
+
+.glow-one {
+  background: #a855f7 !important;
+  opacity: 0.13 !important;
+}
+
+.glow-two {
+  background: #ec4899 !important;
+  opacity: 0.10 !important;
+}
+
+.glow-three {
+  background: #7c3aed !important;
+  opacity: 0.10 !important;
+}
+
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+.navbar {
+  background: rgba(8, 5, 15, 0.72) !important;
+
+  border-color: rgba(168, 85, 247, 0.20) !important;
+
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.28),
+    0 0 30px rgba(168, 85, 247, 0.05) !important;
+
+  backdrop-filter: blur(18px) !important;
+  -webkit-backdrop-filter: blur(18px) !important;
+}
+
+.logo {
+  color: #ffffff !important;
+}
+
+.logo span {
+  color: var(--primary-light) !important;
+}
+
+.nav-links button {
+  color: var(--text-secondary) !important;
+}
+
+.nav-links button:hover {
+  color: #ffffff !important;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+  background: transparent !important;
+}
+
+.status {
+  color: #c4b5fd !important;
+
+  background: rgba(168, 85, 247, 0.08) !important;
+
+  border-color: rgba(168, 85, 247, 0.30) !important;
+}
+
+.status span {
+  background: #c084fc !important;
+
+  box-shadow:
+    0 0 10px #c084fc,
+    0 0 20px rgba(192, 132, 252, 0.55) !important;
+}
+
+.eyebrow {
+  color: #c084fc !important;
+}
+
+.hero h1 {
+  color: #ffffff !important;
+}
+
+.hero h2 {
+  color: #ffffff !important;
+}
+
+.gradient-text {
+  background:
+    linear-gradient(
+      90deg,
+      #c084fc 0%,
+      #a855f7 35%,
+      #ec4899 70%,
+      #f0abfc 100%
+    ) !important;
+
+  background-size: 200% auto !important;
+
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+
+  -webkit-text-fill-color: transparent !important;
+
+  animation:
+    gradientMove 6s linear infinite !important;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% center;
+  }
+
+  50% {
+    background-position: 100% center;
+  }
+
+  100% {
+    background-position: 0% center;
+  }
+}
+
+.hero-description {
+  color: var(--text-secondary) !important;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.primary-btn {
+  background:
+    linear-gradient(
+      135deg,
+      #c084fc,
+      #a855f7
+    ) !important;
+
+  color: #ffffff !important;
+
+  border-color: transparent !important;
+
+  box-shadow:
+    0 10px 30px rgba(168, 85, 247, 0.25) !important;
+}
+
+.primary-btn:hover {
+  box-shadow:
+    0 15px 40px rgba(168, 85, 247, 0.42) !important;
+
+  transform: translateY(-3px) !important;
+}
+
+.secondary-btn {
+  background: rgba(168, 85, 247, 0.05) !important;
+
+  color: #ddd6fe !important;
+
+  border-color: rgba(168, 85, 247, 0.25) !important;
+}
+
+.secondary-btn:hover {
+  background: rgba(168, 85, 247, 0.12) !important;
+
+  border-color: rgba(192, 132, 252, 0.5) !important;
+
+  color: #ffffff !important;
+}
+
+.talk-btn {
+  background: #f8f7ff !important;
+  color: #10091a !important;
+}
+
+.talk-btn:hover {
+  background: #c084fc !important;
+  color: #ffffff !important;
+}
+
+
+/* =========================================================
+   SOCIAL LINKS
+   ========================================================= */
+
+.socials a,
+.socials span {
+  color: #777083 !important;
+}
+
+.socials a:hover,
+.socials span:hover {
+  color: #c084fc !important;
+}
+
+
+/* =========================================================
+   ORBIT
+   ========================================================= */
+
+.orbit {
+  border-color: rgba(168, 85, 247, 0.25) !important;
+}
+
+.orbit-1 {
+  border-color: rgba(192, 132, 252, 0.32) !important;
+}
+
+.orbit-2 {
+  border-color: rgba(168, 85, 247, 0.28) !important;
+}
+
+.orbit-3 {
+  border-color: rgba(236, 72, 153, 0.20) !important;
+}
+
+.orbit-center {
+  background:
+    radial-gradient(
+      circle at 40% 35%,
+      rgba(168, 85, 247, 0.20),
+      rgba(13, 8, 24, 0.96)
+    ) !important;
+
+  border-color: rgba(192, 132, 252, 0.30) !important;
+
+  box-shadow:
+    0 0 40px rgba(168, 85, 247, 0.14),
+    inset 0 0 30px rgba(168, 85, 247, 0.08) !important;
+}
+
+.orbit-center span {
+  color: #ffffff !important;
+
+  text-shadow:
+    0 0 20px rgba(192, 132, 252, 0.45) !important;
+}
+
+.orbit-dot {
+  background: #c084fc !important;
+
+  box-shadow:
+    0 0 8px #c084fc,
+    0 0 18px rgba(192, 132, 252, 0.65) !important;
+}
+
+.dot-two {
+  background: #ec4899 !important;
+
+  box-shadow:
+    0 0 8px #ec4899,
+    0 0 18px rgba(236, 72, 153, 0.55) !important;
+}
+
+
+/* =========================================================
+   ORBIT INFO CARDS
+   ========================================================= */
+
+.info-card {
+  background:
+    rgba(12, 7, 22, 0.78) !important;
+
+  border-color:
+    rgba(168, 85, 247, 0.20) !important;
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.30) !important;
+
+  backdrop-filter: blur(14px) !important;
+}
+
+.info-card strong {
+  color: #f8f7ff !important;
+}
+
+.info-card small {
+  color: #80778f !important;
+}
+
+
+/* =========================================================
+   SECTIONS
+   ========================================================= */
+
+.content-section,
+.contact-section {
+  background: transparent !important;
+}
+
+.section-label {
+  color: #c084fc !important;
+}
+
+.content-section h2,
+.contact-section h2 {
+  color: #ffffff !important;
+}
+
+.large-text,
+.contact-section > p {
+  color: var(--text-secondary) !important;
+}
+
+
+/* =========================================================
+   GLASS CARDS
+   ========================================================= */
+
+.glass-card {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(168, 85, 247, 0.08),
+      rgba(15, 9, 25, 0.70)
+    ) !important;
+
+  border-color:
+    rgba(168, 85, 247, 0.18) !important;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.22) !important;
+
+  backdrop-filter: blur(16px) !important;
+}
+
+.glass-card:hover {
+  border-color:
+    rgba(192, 132, 252, 0.45) !important;
+
+  box-shadow:
+    0 20px 60px rgba(168, 85, 247, 0.12) !important;
+
+  transform: translateY(-6px) !important;
+}
+
+.card-number {
+  color: #a855f7 !important;
+}
+
+.glass-card h3 {
+  color: #ffffff !important;
+}
+
+.glass-card p {
+  color: #ddd6fe !important;
+}
+
+.glass-card small {
+  color: #81788f !important;
+}
+
+
+/* =========================================================
+   SKILLS
+   ========================================================= */
+
+.skill {
+  background:
+    rgba(168, 85, 247, 0.06) !important;
+
+  border-color:
+    rgba(168, 85, 247, 0.18) !important;
+
+  color: #ddd6fe !important;
+}
+
+.skill:hover {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(168, 85, 247, 0.18),
+      rgba(236, 72, 153, 0.12)
+    ) !important;
+
+  border-color:
+    rgba(192, 132, 252, 0.50) !important;
+
+  color: #ffffff !important;
+
+  box-shadow:
+    0 12px 35px rgba(168, 85, 247, 0.15) !important;
+}
+
+
+/* =========================================================
+   PROJECTS
+   ========================================================= */
+
+.project-card {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(168, 85, 247, 0.07),
+      rgba(10, 6, 18, 0.78)
+    ) !important;
+
+  border-color:
+    rgba(168, 85, 247, 0.18) !important;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.22) !important;
+
+  backdrop-filter: blur(14px) !important;
+}
+
+.project-card:hover {
+  border-color:
+    rgba(236, 72, 153, 0.42) !important;
+
+  box-shadow:
+    0 25px 65px rgba(168, 85, 247, 0.14) !important;
+
+  transform: translateY(-8px) !important;
+}
+
+.project-card > span {
+  color: #a855f7 !important;
+}
+
+.project-card h3 {
+  color: #ffffff !important;
+}
+
+.project-card p {
+  color: #a9a2b5 !important;
+}
+
+.tags {
+  color: #c084fc !important;
+}
+
+
+/* =========================================================
+   PROJECT LINKS
+   ========================================================= */
+
+.project-link {
+  color: #c084fc !important;
+
+  border-color:
+    rgba(168, 85, 247, 0.25) !important;
+}
+
+.project-link:hover {
+  color: #ffffff !important;
+
+  background:
+    rgba(168, 85, 247, 0.12) !important;
+
+  border-color:
+    rgba(192, 132, 252, 0.50) !important;
+}
+
+
+/* =========================================================
+   EXPERIENCE
+   ========================================================= */
+
+.timeline-item {
+  border-color:
+    rgba(168, 85, 247, 0.18) !important;
+}
+
+.timeline-item::before {
+  background: #c084fc !important;
+
+  box-shadow:
+    0 0 12px rgba(192, 132, 252, 0.70) !important;
+}
+
+.timeline-item > span {
+  color: #c084fc !important;
+}
+
+.timeline-item h3 {
+  color: #ffffff !important;
+}
+
+.timeline-item p {
+  color: #9f98aa !important;
+}
+
+
+/* =========================================================
+   RESUME
+   ========================================================= */
+
+.resume-box {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(168, 85, 247, 0.10),
+      rgba(236, 72, 153, 0.05)
+    ) !important;
+
+  border-color:
+    rgba(168, 85, 247, 0.20) !important;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.25) !important;
+}
+
+.resume-box strong {
+  color: #ffffff !important;
+}
+
+.resume-box small {
+  color: #8c8498 !important;
+}
+
+.resume-btn {
+  background:
+    linear-gradient(
+      135deg,
+      #a855f7,
+      #ec4899
+    ) !important;
+
+  color: #ffffff !important;
+
+  border-color: transparent !important;
+
+  box-shadow:
+    0 10px 30px rgba(168, 85, 247, 0.22) !important;
+}
+
+.resume-btn:hover {
+  box-shadow:
+    0 15px 40px rgba(236, 72, 153, 0.28) !important;
+
+  transform: translateY(-3px) !important;
+}
+
+
+/* =========================================================
+   CURSOR
+   ========================================================= */
+
+.cursor-dot {
+  background: #c084fc !important;
+
+  box-shadow:
+    0 0 12px #c084fc,
+    0 0 25px rgba(192, 132, 252, 0.55) !important;
+}
+
+.cursor-ring {
+  border-color: rgba(192, 132, 252, 0.55) !important;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+  border-color:
+    rgba(168, 85, 247, 0.12) !important;
+
+  color: #6f6878 !important;
+}
+
+
+/* =========================================================
+   SELECTION
+   ========================================================= */
+
+::selection {
+  background: rgba(168, 85, 247, 0.35);
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07050d;
+}
+
+::-webkit-scrollbar-thumb {
+  background:
+    linear-gradient(
+      #a855f7,
+      #ec4899
+    );
+
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c084fc;
+}
