@@ -457,25 +457,22 @@ export default function App() {
           </button>
 
           <div className="resume-box">
+  <span>📄</span>
 
-            <span>📄</span>
+  <div>
+    <strong>Resume</strong>
+    <small>View my latest resume</small>
+  </div>
 
-            <div>
-              <strong>
-                Resume
-              </strong>
-
-              <small>
-                Resume will be added soon
-              </small>
-            </div>
-
-            <button>
-              Coming Soon
-            </button>
-
-          </div>
-
+  <a
+    href="/Sandeep-Reddy-Resume.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="resume-btn"
+  >
+    View Resume →
+  </a>
+</div>
         </section>
 
       </main>
