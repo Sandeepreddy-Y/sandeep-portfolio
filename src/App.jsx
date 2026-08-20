@@ -176,11 +176,31 @@ export default function App() {
 
             </div>
 
-            <div className="socials">
-              <span>GitHub</span>
-              <span>LinkedIn</span>
-              <span>Instagram</span>
-            </div>
+          <div className="socials">
+  <a
+    href="https://github.com/Sandeepreddy-Y"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    GitHub ↗
+  </a>
+
+  <a
+    href="https://www.linkedin.com/in/sandeep-reddy-yerradla-13619b38b/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    LinkedIn ↗
+  </a>
+
+  <a
+    href="https://www.instagram.com/sandeepreddyy_18/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Instagram ↗
+  </a>
+</div>
 
           </div>
 
@@ -464,7 +484,7 @@ export default function App() {
     <small>View my latest resume</small>
   </div>
 
-  <a
+  <a  
     href="/Sandeep-Reddy-Resume.pdf"
     target="_blank"
     rel="noopener noreferrer"
